@@ -5,9 +5,9 @@
  
  $recipes =[
  
- ['Cassoulet','[...]','mickael.andrieu@exemple.com',true,],
+    ['Cassoulet','[...]','mickael.andrieu@exemple.com',true,],
  
- ['Couscous','[...]','mickael.andrieu@exemple.com',false,],
+     ['Couscous','[...]','mickael.andrieu@exemple.com',false,],
  
  ];
  
@@ -20,25 +20,25 @@
  
  <head>
  
- <title>Affichage desrecettes</title>
+     <title>Affichage desrecettes</title>
  
  </head>
  
  <body>
  
- <ul>
+     <ul>
 
- <?php for ($lines=0; $lines<= 1;$lines++): ?>
+         <?php for ($lines=0; $lines<= 1;$lines++): ?>
 
- <li>
+             <li>
 
- <?php echo $recipes[$lines][0]. ' (' .$recipes[$lines][2]. ')';?>
+                 <?php echo $recipes[$lines][0]. ' (' .$recipes[$lines][2]. ')';?>
 
- </li>
+             </li>
 
- <?php endfor; ?>
+        <?php endfor; ?>
 
- </ul>
+     </ul>
 
  </body>
 
