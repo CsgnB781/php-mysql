@@ -1,10 +1,8 @@
-<nav id="menu">
-  <div class="element_menu">
-    <h3>Titre menu</h3>
-    <ul>
-      <li><a href="page1.html">Lien</a></li>
-      <li><a href="page2.html">Lien</a></li>
-      <li><a href="page3.html">Lien</a></li>
-    </ul>
+<nav class="navbar navbar-light bg-light mb-3">
+  <div class="container">
+    <span class="navbar-brand mb-0 h1">Site de recettes</span>
+    <button class="navbar-toggler" type="button">
+      <span class="navbar-toggler-icon"></span>
+    </button>
   </div>
 </nav>
