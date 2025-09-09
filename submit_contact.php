@@ -14,6 +14,14 @@
     <?php include_once(__DIR__ . '/header.php'); ?>
 
     <h1>Message bien reçu !</h1>
+    
+    <?php
+    // Verification pour savoir si il ya le mail et le messag ede present
+    if (!isset($_GET['email']) || !isset($_GET['message'])) {
+        echo "<p>Il faut un email et un message pour soumettre le formulaire.</p>";
+        return; 
+    }
+    ?>
 
     <div class="card">
         <div class="card-body">
