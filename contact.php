@@ -17,7 +17,7 @@
     <h1>Contactez-nous</h1>
 
     <!-- Formulaire version GET vers submit_contact.php -->
-    <form method="GET" action="submit_contact.php" class="mb-4">
+    <form method="POST" action="submit_contact.php" class="mb-4">
       <div class="mb-3">
         <label for="email" class="form-label">Email</label>
         <input id="email" name="email" type="text" class="form-control" placeholder="">
