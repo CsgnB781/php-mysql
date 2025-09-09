@@ -12,26 +12,27 @@
 </head>
 <body class="d-flex flex-column min-vh-100">
   <div class="container">
-    <?php include_once('header.php'); ?>
+    <?php include_once(__DIR__ . '/header.php'); ?>
 
-    <h1>Contactez nous</h1>
+    <h1>Contactez-nous</h1>
 
-    <form action="#" method="post" class="mb-4">
+    <!-- Formulaire version GET vers submit_contact.php -->
+    <form method="GET" action="submit_contact.php" class="mb-4">
       <div class="mb-3">
         <label for="email" class="form-label">Email</label>
-        <input id="email" name="email" type="email" class="form-control" placeholder="">
+        <input id="email" name="email" type="text" class="form-control" placeholder="">
         <div class="form-text">Nous ne revendrons pas votre email.</div>
       </div>
 
       <div class="mb-3">
         <label for="message" class="form-label">Votre message</label>
-        <textarea id="message" name="message" class="form-control" rows="4" placeholder="Exprimez vous"></textarea>
+        <textarea id="message" name="message" class="form-control" rows="4" placeholder="Exprimez-vous"></textarea>
       </div>
 
       <button type="submit" class="btn btn-primary">Envoyer</button>
     </form>
   </div>
 
-  <?php include_once('footer.php'); ?>
+  <?php include_once(__DIR__ . '/footer.php'); ?>
 </body>
 </html>
